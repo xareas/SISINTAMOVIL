@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             Padding="0,20,0,0"
+             Icon="menu.png"
+             Title="SISINTA 2019"
+             xmlns:view="clr-namespace:SISINTA.View" 
+             xmlns:inf="clr-namespace:SISINTA.Infrastructure"
+             x:Class="SISINTA.View.MasterPage">
+    <StackLayout>
+       <ListView x:Name="listView" 
+                 
+                 HasUnevenRows="true" SeparatorVisibility="None">
+          <ListView.ItemsSource>
+            <x:Array Type="{x:Type inf:MasterPageItem}">
+              <inf:MasterPageItem Titulo="Productores" Icono="productor.png" PageType="{x:Type view:ProdPage}"/>
+              <inf:MasterPageItem Titulo="Bancos Semilla" Icono="bancos.png" PageType="{x:Type view:BankPage}"/>      
+              <inf:MasterPageItem Titulo="Investigaciones" Icono="transferencia.png" PageType="{x:Type view:InvesPage}"/> 
+              <inf:MasterPageItem Titulo="Reportes" Icono="printer.png" PageType="{x:Type view:InvesPage}"/> 
+                    <inf:MasterPageItem Titulo="Acerca de..." Icono="about.png" PageType="{x:Type view:AboutPage}"/>        
+            </x:Array>
+          </ListView.ItemsSource>
+          <ListView.ItemTemplate>
+            <DataTemplate>
+               <ViewCell>
+                 <Grid Padding="5,15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="32" />        
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{Binding Icono}" ></Image>
+                    <Label Grid.Column="1" Text="{Binding Titulo}"></Label>        
+                 </Grid>       
+               </ViewCell>     
+            </DataTemplate>    
+          </ListView.ItemTemplate>  
+       </ListView>
+    </StackLayout>
+</ContentPage>
