@@ -2,6 +2,14 @@
 
 Un sistema de informacion movil para ser utilizado por el personal de la institución.
 
+![](/Users/xareas/Projects/SISINTA/assets/sisinta.png)
+
+|                                                              |                                                              |                                                              |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![](/Users/xareas/Projects/SISINTA/assets/about.png)Acerca de | ![](/Users/xareas/Projects/SISINTA/assets/bancos.png)Productores | ![](/Users/xareas/Projects/SISINTA/assets/info.png)Investigaciones | ![bancos](/Users/xareas/Projects/SISINTA/assets/bancos.png)Bancos Semilla |
+|                                                              |                                                              |                                                              |                                                              |
+|                                                              |                                                              |                                                              |                                                              |
+
 
 
 ## Getting Started
@@ -16,7 +24,7 @@ En desarrollo......
 Give examples
 ```
 
-### Instalacion
+### Installation
 
 A step by step series of examples that tell you how to get a development env running
 
