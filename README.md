@@ -10,6 +10,8 @@ Un sistema de informacion movil para ser utilizado por el personal de la institu
 
 Aplicativo desarrollado utilizando XAMARIN FORMS 3.0, se ejecuta en IOS Y Android 5.1.
 
+[Video de la Aplicacion](https://www.youtube.com/watch?v=-wINLNQEX0c&t=44s)
+
 ### Prerequisites
 
 En desarrollo......

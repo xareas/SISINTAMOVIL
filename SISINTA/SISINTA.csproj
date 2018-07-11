@@ -17,5 +17,6 @@
   <ItemGroup>
     <Compile Remove="View\ProductorPage.cs" />
     <Compile Remove="View\ProdListPage.cs" />
+    <Compile Remove="ViewModel\BaseViewModelParam.cs" />
   </ItemGroup>
 </Project>
