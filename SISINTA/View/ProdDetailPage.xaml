@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:map="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="SISINTA.View.ProdDetailPage">
+  <Grid>
+     <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+     </Grid.RowDefinitions>   
+
+        <map:Map Grid.Row="0" x:Name="mapa" Grid.ColumnSpan="3"></map:Map>
+
+        <BoxView Grid.Row="1" Grid.ColumnSpan="3"  BackgroundColor="White" Opacity="0.8"></BoxView>
+
+        <StackLayout Padding="15" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <Label x:Name="nombre" HorizontalOptions="CenterAndExpand" TextColor="#B28774" FontAttributes="Bold"></Label> 
+            <Label x:Name="departamento" HorizontalOptions="CenterAndExpand" TextColor="#B28774"></Label> 
+            <Label x:Name="municipio" HorizontalOptions="CenterAndExpand" TextColor="#B28774"></Label> 
+            <Label x:Name="comunidad" HorizontalOptions="CenterAndExpand" TextColor="#B28774"></Label> 
+            <Label x:Name="tipo" HorizontalOptions="CenterAndExpand" TextColor="#B28774"></Label> 
+         </StackLayout>   
+  </Grid>  
+</ContentPage>

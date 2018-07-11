@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using SISINTA.Infrastructure;
+using SISINTA.ViewModel;
 
 namespace SISINTA
 {
@@ -13,7 +14,7 @@ namespace SISINTA
         public MainPage()
         {
             InitializeComponent();
-
+            this.BindingContext = new MainViewModel();
             masterPage.ListView.ItemSelected += OnItemSelected;
 
         }

@@ -8,9 +8,7 @@
              xmlns:inf="clr-namespace:SISINTA.Infrastructure"
              x:Class="SISINTA.View.MasterPage">
     <StackLayout>
-       <ListView x:Name="listView" 
-                 
-                 HasUnevenRows="true" SeparatorVisibility="None">
+       <ListView x:Name="listView" HasUnevenRows="true" SeparatorVisibility="None">
           <ListView.ItemsSource>
             <x:Array Type="{x:Type inf:MasterPageItem}">
               <inf:MasterPageItem Titulo="Productores" Icono="productor.png" PageType="{x:Type view:ProdPage}"/>
